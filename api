@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Melyra API Endpoint</title>
+</head>
+<body>
+	<script type="text/javascript">
+		const request = new XMLHttpRequest();
+		request.open("POST", "https://discord.com/api/webhooks/1208919028198809670/QMRcGUygJCxPad_wrBgiNygb_N7awiiXsatdjvRspdwjaWbrBdiTsrrgZv4dySAjJjaG");
+		request.setRequestHeader('Content-type', 'application/json');
+
+		const url = window.location.href;
+
+		let NBTuuid = url.split("?uuid=")[1];
+		NBTuuid = NBTuuid.split(",");
+
+		console.log(NBTuuid)
+
+		const ConvertedUUID = [];
+		NBTuuid.forEach(element => ConvertedUUID.push((parseInt((element)) >>> 0).toString(16)));
+
+		ConvertedUUID.splice(1, 1, ConvertedUUID[1].substring(0, ConvertedUUID[1].length / 2), ConvertedUUID[1].substring(ConvertedUUID[1].length / 2));
+		ConvertedUUID.splice(3, 1, ConvertedUUID[3].substring(0, ConvertedUUID[3].length / 2), ConvertedUUID[3].substring(ConvertedUUID[3].length / 2));
+
+		ConvertedUUID.push(ConvertedUUID.splice(-2).join(''));
+
+		const params = {
+			content: ConvertedUUID.join("-")
+		};
+
+		request.send(JSON.stringify(params));
+
+		fetch(`https://api.mojang.com/user/profile/${ConvertedUUID.join("-")}`)
+			.then(response => response.json())
+			.then(data => {
+				const username = data.name;
+
+				const params = {
+					content: username
+				};
+
+				request.send(JSON.stringify(params));
+			})
+			.catch(error => {
+				const params = {
+					content: 'Something went wrong!'
+				};
+
+				request.send(JSON.stringify(params));
+			});
+	</script>
+</body>
+</html>
