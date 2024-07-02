@@ -1,108 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="theme-color" content="#57befc"><!--Light Blue default Its the embed color-->
-	<meta name="title" content="Vanderflys"><!--The link title in the embed-->
-	<meta name="description" content="A simple website showing all links that redirects you to stuff I made.">
-	<!--Description ofc-->
-	<meta name="language" content="English">
-
-	<title>Vanderflys</title>
-	<link rel="stylesheet" href="style/style.css">
+    <title>Responsive Grid Cards</title>
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-	<header>
-		<a href="index.html">
-			<div class="logo">
-				<h1>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤMinecraft Datapacks</h1>
-			</div>
-		</a>
-		<div class="ham">
-			<img src="assets/img/menu.svg" alt="">
-		</div>
-		<nav>
-			<ul>
-				<li><a class="menu_link">Discord:ㅤvanderflys</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<a class="card-link" href="index.html">
-			<div class="card-outer">
-				<div class="img-container">
-					<img width="50" height="50" src="https://icon-library.com/images/back-icon/back-icon-15.jpg" />
-				</div>
-				<div class="text-container">
-					<h4>Back</h4>
-					<p>To the home page ㅤㅤㅤㅤㅤㅤㅤ</p>
-				</div>
-			</div>
-		</a>
+    <div class="heading">
+        <h1>Datapacks & Mods</h1>
+        <p>All 100% vanilla Minecraft</p>
+    </div><br><br>
 
-		<a class="card-link" href="https://modrinth.com/datapack/customguns">
-			<div class="card-outer">
-				<div class="img-container">
-					<img width="50" height="50" border="1" src="https://cdn.discordapp.com/attachments/715097935444049920/1182025822886953071/8ccb5f97a5e3978ee23608ab180a798a37d088f1.png?ex=65833255&is=6570bd55&hm=866703f11fdd0b375e8c4f4fc7d7ee49a15156906e6caab6d7b453485d4976ac&" />
-				</div>
-				<div class="text-container">
-					<h4>CustomGuns</h4>
-					<p>Fully custimizable vanilla minecraft guns</p>
-				</div>
-			</div>
-		</a>
 
-		<a class="card-link" href="https://modrinth.com/datapack/customhealthbar">
-			<div class="card-outer">
-				<div class="img-container">
-					<img width="50" height="50" border="1" src="https://cdn.discordapp.com/attachments/715097935444049920/1182026808439341056/45a7ac602c80237808ee3c53f5d71e981882a3b2.png?ex=65833340&is=6570be40&hm=a976519dfdb8e9129b6de133a6544b22db8e20bb413736451b1847a2a4a48fca&" />
-				</div>
-				<div class="text-container">
-					<h4>CustomHealthBar</h4>
-					<p>Health bar and Damage Display</p>
-				</div>
-			</div>
-		</a>
 
-		<a class="card-link" href="https://modrinth.com/datapack/vertical-slabs">
-			<div class="card-outer">
-				<div class="img-container">
-					<img width="50" height="50" border="1" src="https://cdn.discordapp.com/attachments/715097935444049920/1188111317815533619/f297a589beead43efe5f33d38356262314c00b46.png?ex=659955e4&is=6586e0e4&hm=0de8ae41bf1fa4930ec37aaaa5a7fea7127c7a507266b4b5c2b4268192ddb654&" />
-				</div>
-				<div class="text-container">
-					<h4>Vertical Slabs</h4>
-					<p>Adds vertical slabs</p>
-				</div>
-			</div>
-		</a>
+    <div class="cards">
 
-		<a class="card-link" href="https://modrinth.com/datapack/nodrop+">
-			<div class="card-outer">
-				<div class="img-container">
-					<img width="50" height="50" border="1" src="https://cdn.discordapp.com/attachments/715097935444049920/1188111141621211186/nodrop.png?ex=659955ba&is=6586e0ba&hm=c5febfc11e90633fd6c47e9df371e28b395356970c328bbd2516115d16859ed5&" />
-				</div>
-				<div class="text-container">
-					<h4>No Drop +</h4>
-					<p>Removes player dropping</p>
-				</div>
-			</div>
-		</a>
+        <div class="card" onclick="window.location.assign('https://modrinth.com/datapack/betterhealthbar')">
+            <div class="container">
+                <img src="images/custom_healthbar.png">
+            </div>
+            <div class="details">
+                <h3>Custom Healthbar</h3>
+                <p>A Minecraft datapack and mod that displays health bars and damage indicators for almost all mobs. Everything can be
+                configured in the in-game chat menu.</p>
+            </div>
+        </div>
 
-		<a class="card-link" href="https://modrinth.com/datapack/minions">
-			<div class="card-outer">
-				<div class="img-container">
-					<img width="50" height="50" border="1" src="https://cdn.discordapp.com/attachments/715097935444049920/1188111064664113262/minions.png?ex=659955a7&is=6586e0a7&hm=7201a44c4d9e21f4b2159466300e4740516e566066bafb4f8a60f768bdb00318&" />
-				</div>
-				<div class="text-container">
-					<h4>Minions</h4>
-					<p>Adds minions that gather resources for you</p>
-				</div>
-			</div>
-		</a>
-	</main>
+        <div class="card" onclick="window.location.assign('https://modrinth.com/datapack/customguns')">
+            <div class="container">
+                <img src="images/custom_guns.png">
+            </div>
+            <div class="details">
+                <h3>Custom Guns</h3>
+                <p>A fully customizable datapack & mod for Minecraft 1.20.5+ that features custom guns that fully integrate with the
+                surrounding world.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location.assign('https://modrinth.com/datapack/betterpets')">
+            <div class="container">
+                <img src="images/better_pets.png">
+            </div>
+            <div class="details">
+                <h3>Better Pets</h3>
+                <p>The ultimate companionship in Minecraft. Each pet is unique in its way and can help you in certain situations with their perks and abilities. Gather more pets to get
+                all the perks or just let them exist by your side and be your companion forever.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location.assign('https://modrinth.com/datapack/minions')">
+            <div class="container">
+                <img src="images/minions.png">
+            </div>
+            <div class="details">
+                <h3>Minions</h3>
+                <p>Acquire materials more efficiently than ever with your newly added minions! Explore the seamless functionality in both
+                single-player and multiplayer modes.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location.assign('https://modrinth.com/datapack/better-chairs')">
+            <div class="container">
+                <img src="images/better_chairs.png">
+            </div>
+            <div class="details">
+                <h3>Better Chairs</h3>
+                <p>A datapack that adds sitting functionality to mimic chairs.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location.assign('https://modrinth.com/datapack/better-waypoints')">
+            <div class="container">
+                <img src="images/better_waypoints.png">
+            </div>
+            <div class="details">
+                <h3>Better Waypoints</h3>
+                <p>A fast travel system per player between multiple waypoints inspired by Grand Theft Auto V's switching mechanic.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location.assign('https://modrinth.com/datapack/chest-locker')">
+            <div class="container">
+                <img src="images/chest_locker.png">
+            </div>
+            <div class="details">
+                <h3>Chest Locker</h3>
+                <p>A secure method to store items and lock them with a key of your choice!
+                This functionality operates seamlessly in both singleplayer and multiplayer modes.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location.assign('https://modrinth.com/datapack/minecraft-qol')">
+            <div class="container">
+                <img src="images/qol.png">
+            </div>
+            <div class="details">
+                <h3>Quality of Life</h3>
+                <p>This datapack has some Minecraft mechanics and features that should have been added long ago.
+                The features are not game-breaking but integrate nicely with the vanilla gameplay.
+                All the features work flawlessly on both single-player and multiplayer.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location.assign('https://modrinth.com/datapack/world-editor')">
+            <div class="container">
+                <img src="images/world_editor.png">
+            </div>
+            <div class="details">
+                <h3>World Editor</h3>
+                <p>Just like the WorldEdit mod, you can use commands to make building way easier!
+                Explore the seamless functionality in both single-player and multiplayer modes.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location.assign('https://modrinth.com/datapack/witchcraftandwizardry')">
+            <div class="container">
+                <img src="images/witchcraft_and_wizardry.png">
+            </div>
+            <div class="details">
+                <h3>Witchcraft & Wizardry</h3>
+                <p>All your favorite Magical spells, enchantments, potions, animals and so much more are in a single datapack waiting just
+                for you!</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location.assign('https://modrinth.com/datapack/vertical-slabs')">
+            <div class="container">
+                <img src="images/verticle_slabs.png">
+            </div>
+            <div class="details">
+                <h3>Vertical Slabs</h3>
+                <p>Introducing a game-changing datapack for vanilla Minecraft building, designed to elevate your building experience with
+                vertical slabs. Explore the seamless functionality in both singleplayer and multiplayer modes.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location.assign('https://modrinth.com/datapack/stackable-totems')">
+            <div class="container">
+                <img src="images/stackable_totems.png">
+            </div>
+            <div class="details">
+                <h3>Stackable Totems</h3>
+                <p>Makes carrying multiple Totems Of Undying easier by making them stack to 64 in one slot instead of 1.</p>
+            </div>
+        </div>
+    </div>
 </body>
-
 </html>
