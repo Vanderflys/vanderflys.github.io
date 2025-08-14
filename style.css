@@ -1,9 +1,9 @@
 :root {
     --bg: #f6f7fb;
-    --card: #ffffff;
+    --card: #D8DEE9;
+    --glass: #D8DEE9;
     --accent: #5b9cff;
     --muted: #6b7280;
-    --glass: rgba(255, 255, 255, 0.6);
     --radius: 14px;
     --shadow: 0 6px 18px rgba(20, 30, 80, 0.08);
     --max-width: 1100px;
@@ -27,7 +27,6 @@ a {
     text-decoration: none
 }
 
-/* Layout */
 .wrap {
     max-width: var(--max-width);
     margin: 28px auto;
@@ -42,9 +41,6 @@ header {
     margin-bottom: 22px
 }
 
-
-
-/* Brand */
 .brand {
     display: flex;
     align-items: center;
@@ -53,9 +49,7 @@ header {
 
 .logo img {
     height: 40px;
-    /* adjust as needed */
     border-radius: 8px;
-    /* optional rounded corners */
     display: block;
 }
 
@@ -70,7 +64,6 @@ header {
     color: var(--muted)
 }
 
-/* Nav */
 nav {
     display: flex;
     align-items: center;
@@ -110,7 +103,6 @@ nav {
     border-radius: 10px
 }
 
-/* Mobile */
 .hamburger {
     display: none;
     border: 0;
@@ -129,7 +121,6 @@ nav {
     }
 }
 
-/* Page container */
 main {
     display: block
 }
@@ -149,7 +140,7 @@ main {
 .card {
     padding: 18px;
     border-radius: 12px;
-    background: linear-gradient(180deg, var(--glass), rgba(255, 255, 255, 0.88));
+    background: var(--glass);
     backdrop-filter: blur(6px);
 }
 
@@ -158,7 +149,10 @@ main {
     font-size: 18px
 }
 
-/* Payment form */
+.text {
+    color: black;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -183,7 +177,6 @@ select {
     color: var(--muted)
 }
 
-/* Footer */
 footer {
     margin-top: 18px;
     text-align: center;
@@ -191,7 +184,6 @@ footer {
     font-size: 13px
 }
 
-/* Tiny animations */
 .fade-in {
     animation: fade .45s ease both
 }
@@ -208,7 +200,6 @@ footer {
     }
 }
 
-/* Success */
 .success-illustr {
     width: 100%;
     height: 120px;
@@ -221,7 +212,6 @@ footer {
     color: #065f46
 }
 
-/* Responsive table for order summary */
 .summary {
     border-radius: 10px;
     padding: 12px;
