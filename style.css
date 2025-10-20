@@ -13,10 +13,8 @@ body {
     background-color: #0b0d0e;
     color: #dcdcdc;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
     min-height: 100vh;
-    padding-bottom: calc(var(--footer-height) + 1rem);
 }
 
 header {
@@ -44,6 +42,13 @@ header nav a {
 
 header nav a:hover {
     color: #4ade80;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .center-stage {
@@ -82,7 +87,7 @@ header nav a:hover {
 }
 
 .stage-text p {
-    color: #bfbfbf;
+    color: #9BA297;
     margin-top: 1.5rem;
     font-size: 1.1rem;
     line-height: 1.6;
@@ -133,10 +138,8 @@ header nav a:hover {
 }
 
 .footer {
-    position: fixed;
-    left: 1.5rem;
-    right: 1.5rem;
-    bottom: 1rem;
+    position: static;
+    margin-top: 0;
     height: var(--footer-height);
     color: #9ca3af;
     font-size: 0.95rem;
@@ -171,7 +174,7 @@ header nav a:hover {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
     .center-stage {
         padding: 3rem 1.5rem;
         flex-direction: column-reverse;
@@ -181,11 +184,24 @@ header nav a:hover {
     .stage-text {
         width: 100%;
         max-width: 700px;
-        text-align: left;
+        text-align: center;
+    }
+
+    .stage-text p {
+        color: #9BA297;
+        margin-top: 1.5rem;
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: center;
     }
 
     .stage-text h1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .actions {
+        justify-content: center;
     }
 
     .stage-figure img {
