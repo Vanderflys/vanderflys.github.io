@@ -80,7 +80,7 @@ header nav a:hover {
 }
 
 .stage-text h1 span {
-    background: linear-gradient(90deg, #033d84, #1b88b6);
+    background: linear-gradient(90deg, #033d84, #1b88b6, #033d84);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -209,3 +209,4 @@ header nav a:hover {
         margin-bottom: 1rem;
     }
 }
+
