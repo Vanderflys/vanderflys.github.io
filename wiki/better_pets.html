@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanderflys Pet Wiki</title>
+    <link rel="stylesheet" href="../style/better_pets.css">
+    <link rel="icon" type="image/png" href="../logo.png">
+</head>
+
+<body>
+    <main>
+        <!-- Top-left Home button -->
+        <a href="../index.html" class="top-left-button" title="Back to home">Home</a>
+        <header>
+            <h1>Official Better Pets Wiki</h1>
+            <p>Welcome to the Better Pets Wiki. This wiki has a list of all the pets and their drop chances in full detail. Click on the buttons below to view more information about each category.</p>
+        </header>
+
+        <nav>
+            <h1>Contents</h1>
+            <a href="#PetMenu" class="mc-button">Pet Menu</a> •
+            <a href="#DropChances" class="mc-button">Drop Chances</a> •
+            <a href="#Leveling" class="mc-button">Leveling</a> •
+            <a href="https://modrinth.com/datapack/betterpets/changelog" class="mc-button">Patch Logs</a>
+        </nav>
+
+        <section id="PetMenu">
+            <br><br><br>
+            <div class="content-header">
+                <h1>Pet Menu</h1>
+                <p>The <span style="color:lime">Pet Menu</span> can be accessed by <span style="color:yellow">right-clicking</span> on the <span style="color:lime">Pet Menu</span> item while holding it in your <span style="color:yellow">mainhand</span>. This menu shows all your pets and a <a href="#PetLevelingDisplay" style="color:aqua;">Pet Leveling Display</a> that shows your leveling progress with the active pet. You can also <span style="color:orange">spawn</span>, <span style="color:orange">despawn</span> and <span style="color:orange">convert</span> your pets back to an item here.</p>
+                <p>You can add pets to your pet menu by <span style="color:yellow">right-clicking</span> on while holding it in your <span style="color:yellow">mainhand</span>.</p>
+            </div>
+
+            <div class="mc-container">
+                <p>The menu below is an example of how the <span style="color:lime">Pet Menu</span> looks in-game when having collected all pets. <span style="color:pink">Hover</span> over each pet to see its details. <span style="color:pink">Click</span> on it to view a more in-depth description about each perk and how it scales.</p>
+
+                <section class="section"> 
+                    <div class="section-title-panel">
+                        <h2 class="section-title" style="color:gray">Pet Menu (1/2)</h2>
+                    </div>
+
+                    <div class="item-grid">
+                        <div class="item-slot" data-item="Ant">
+                            <img src="../images/betterpets/ant.png" alt="Ant" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:lime">[Lvl 100] Ant</div>
+                                <div style="color:lightgray">A loyal companion that offers unique abilities to its owner.</div>
+                                <br>
+                                <div style="color:gold">✧ Ant's Blessing</div>
+                                <div style="color:lightgray">Become <span style="color:aqua">50%</span> smaller in scale.</div>
+                                <br>
+                                <div style="color:lime">COMMON</div>
+                                <br>
+                                <div style="color:yellow">Click to summon</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot" data-item="Cat">
+                            <img src="../images/betterpets/cat.png" alt="Cat" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:lime">[Lvl 100] Cat</div>
+                                <div style="color:lightgray">A loyal companion that offers unique abilities to its owner.</div>
+                                <br>
+                                <div style="color:gold">✧ Cat's Blessing</div>
+                                <div style="color:lightgray">Decreases fall damage by <span style="color:aqua">100%</span></div>
+                                <br>
+                                <div style="color:lime">COMMON</div>
+                                <br>
+                                <div style="color:yellow">Click to summon</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot" data-item="Chicken">
+                            <img src="../images/betterpets/chicken.png" alt="Chicken" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:lime">[Lvl 100] Chicken</div>
+                                <div style="color:lightgray">A loyal companion that offers unique abilities to its owner.</div>
+                                <br>
+                                <div style="color:gold">✧ Chicken's Blessing</div>
+                                <div style="color:lightgray">Gain <span style="color:yellow">10</span> seconds of <span style="color:green">slow falling</span> every <span style="color:aqua">10</span> seconds.</div>
+                                <div style="color:darkgray">Upgrades every 10 levels.</div>
+                                <br>
+                                <div style="color:lime">COMMON</div>
+                                <br>
+                                <div style="color:yellow">Click to summon</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot" data-item="Dog">
+                            <img src="../images/betterpets/dog.png" alt="Dog" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:lime">[Lvl 100] Dog</div>
+                                <div style="color:lightgray">A loyal companion that offers unique abilities to its owner.</div>
+                                <br>
+                                <div style="color:gold">✧ Dog's Blessing</div>
+                                <div style="color:lightgray">Gain a <span style="color:aqua">100</span><span style="color:aqua">%</span> chance of an extra attack from your dog when in combat against the undead.</div>
+                                <br>
+                                <div style="color:lime">COMMON</div>
+                                <br>
+                                <div style="color:yellow">Click to summon</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot" data-item="Hamster">
+                            <img src="../images/betterpets/hamster.png" alt="Hamster" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:lime">[Lvl 100] Hamster</div>
+                                <div style="color:lightgray">A loyal companion that offers unique abilities to its owner.</div>
+                                <br>
+                                <div style="color:gold">✧ Hamster's Blessing</div>
+                                <div style="color:lightgray">Increase the amount of blocks you can step on without jumping by <span style="color:aqua">0.9</span> block.</div>
+                                <br>
+                                <div style="color:lime">COMMON</div>
+                                <br>
+                                <div style="color:yellow">Click to summon</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot" data-item="Red_Parrot">
+                            <img src="../images/betterpets/red_parrot.png" alt="Red Parrot" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:lime">[Lvl 100] Red Parrot</div>
+                                <div style="color:lightgray">A loyal companion that offers unique abilities to its owner.</div>
+                                <br>
+                                <div style="color:gold">✧ Red Parrot's Blessing</div>
+                                <div style="color:lightgray">Your parrot mimics nearby mob sounds to alert you by showing you the closest hostile mob in a radius of <span style="color:aqua">30</span> blocks.</div>
+                                <div style="color:darkgray">Upgrades every 10 levels.</div>
+                                <br>
+                                <div style="color:lime">COMMON</div>
+                                <br>
+                                <div style="color:yellow">Click to summon</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot" data-item="Spinosaurus">
+                            <img src="../images/betterpets/spinosaurus.png" alt="Spinosaurus" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:lime">[Lvl 100] Spinosaurus</div>
+                                <div style="color:lightgray">A loyal companion that offers unique abilities to its owner.</div>
+                                <br>
+                                <div style="color:gold">✧ Spinosaurus's Blessing</div>
+                                <div style="color:lightgray">Become <span style="color:aqua">50</span><span style="color:aqua">%</span> bigger in scale.</div>
+                                <br>
+                                <div style="color:lime">COMMON</div>
+                                <br>
+                                <div style="color:yellow">Click to summon</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot" data-item="Worm">
+                            <img src="../images/betterpets/worm.png" alt="Worm" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:lime">[Lvl 100] Worm</div>
+                                <div style="color:lightgray">A loyal companion that offers unique abilities to its owner.</div>
+                                <br>
+                                <div style="color:gold">✧ Worm's Blessing</div>
+                                <div style="color:lightgray">Increase mining speed by <span style="color:aqua">650</span><span style="color:aqua">%</span> when using the correct tool.</div>
+                                <br>
+                                <div style="color:lime">COMMON</div>
+                                <br>
+                                <div style="color:yellow">Click to summon</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot" data-item="Axolotl">
+                            <img src="../images/betterpets/axolotl.png" alt="Axolotl" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:blue">[Lvl 100] Axolotl</div>
+                                <div style="color:lightgray">A loyal companion that offers unique abilities to its owner.</div>
+                                <br>
+                                <div style="color:gold">✧ Axolotl's Blessing</div>
+                                <div style="color:lightgray">Allows you to stay underwater for approximately <span style="color:aqua">900</span><span style="color:aqua">%</span> longer.</div>
+                                <br>
+                                <div style="color:blue">RARE</div>
+                                <br>
+                                <div style="color:yellow">Click to summon</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Row 2 -->
+                        <div class="item-slot" data-item="Elder_Guardian">
+                            <img src="../images/betterpets/elder_guardian.png" alt="Elder Guardian" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:blue">[Lvl 100] Elder Guardian</div>
+                                <div style="color:lightgray">A loyal companion that offers unique abilities to its owner.</div>
+                                <br>
+                                <div style="color:gold">✧ Elder Guardian's Blessing</div>
+                                <div style="color:lightgray">Increase mining speed when underwater by <span style="color:aqua">400</span><span style="color:aqua">%</span>.</div>
+                                <br>
+                                <div style="color:blue">RARE</div>
+                                <br>
+                                <div style="color:yellow">Click to summon</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot" data-item="Pufferfish">
+                            <img src="../images/betterpets/pufferfish.png" alt="Pufferfish" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:blue">[Lvl 100] Pufferfish</div>
+                                <div style="color:lightgray">A loyal companion that offers unique abilities to its owner.</div>
+                                <br>
+                                <div style="color:gold">✧ Pufferfish's Blessing</div>
+                                <div style="color:lightgray">Poison nearby undead mobs every <span style="color:aqua">10</span> seconds.</div>
+                                <div style="color:darkgray">Upgrades every 10 levels.</div>
+                                <br>
+                                <div style="color:blue">RARE</div>
+                                <br>
+                                <div style="color:yellow">Click to summon</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot" data-item="Snail">
+                            <img src="../images/betterpets/snail.png" alt="Snail" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:blue">[Lvl 100] Snail</div>
+                                <div style="color:lightgray">A loyal companion that offers unique abilities to its owner.</div>
+                                <br>
+                                <div style="color:gold">✧ Snail's Blessing</div>
+                                <div style="color:lightgray">Increases movement speed when sneaking by <span style="color:aqua">233</span><span style="color:aqua">%</span>.</div>
+                                <br>
+                                <div style="color:blue">RARE</div>
+                                <br>
+                                <div style="color:yellow">Click to summon</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot" data-item="Turtle">
+                            <img src="../images/betterpets/turtle.png" alt="Turtle" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:blue">[Lvl 100] Turtle</div>
+                                <div style="color:lightgray">A loyal companion that offers unique abilities to its owner.</div>
+                                <br>
+                                <div style="color:gold">✧ Turtle's Blessing</div>
+                                <div style="color:lightgray">Incoming knockback is reduced by <span style="color:aqua">100</span><span style="color:aqua">%</span>.</div>
+                                <br>
+                                <div style="color:blue">RARE</div>
+                                <br>
+                                <div style="color:yellow">Click to summon</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot" data-item="Dolphin">
+                            <img src="../images/betterpets/dolphin.png" alt="Dolphin" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:purple">[Lvl 100] Dolphin</div>
+                                <div style="color:lightgray">A loyal companion that offers unique abilities to its owner.</div>
+                                <br>
+                                <div style="color:gold">✧ Dolphin's Blessing</div>
+                                <div style="color:lightgray">Increase underwater movement efficiency by <span style="color:aqua">200</span><span style="color:aqua">%</span>.</div>
+                                <br>
+                                <div style="color:gold">✧ Furious Tides</div>
+                                <div style="color:lightgray">Call upon the power of the Sea and receive the <span style="color:dark_aqua">Dolphin's Grace</span>.</div>
+                                <br>
+                                <div style="color:purple">EPIC</div>
+                                <br>
+                                <div style="color:yellow">Click to summon</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot" data-item="Ghast">
+                            <img src="../images/betterpets/ghast.png" alt="Ghast" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:purple">[Lvl 100] Ghast</div>
+                                <div style="color:lightgray">A loyal companion that offers unique abilities to its owner.</div>
+                                <br>
+                                <div style="color:gold">✧ Ghast's Blessing</div>
+                                <div style="color:lightgray">Increase explosion knockback resistance by <span style="color:aqua">100</span><span style="color:aqua">%</span>.</div>
+                                <br>
+                                <div style="color:gold">✧ Ghastly Presence</div>
+                                <div style="color:lightgray">Increase experience gain when in The Nether.</div>
+                                <br>
+                                <div style="color:purple">EPIC</div>
+                                <br>
+                                <div style="color:yellow">Click to summon</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot" data-item="Owl">
+                            <img src="../images/betterpets/owl.png" alt="Owl" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:purple">[Lvl 100] Owl</div>
+                                <div style="color:lightgray">A loyal companion that offers unique abilities to its owner.</div>
+                                <br>
+                                <div style="color:gold">✧ Owl's Blessing</div>
+                                <div style="color:lightgray">Increase luck by <span style="color:aqua">500</span><span style="color:aqua">%</span> for higher chances to find rare items.</div>
+                                <br>
+                                <div style="color:gold">✧ Enchanced Vision</div>
+                                <div style="color:lightgray">Gain permanent night vision.</div>
+                                <br>
+                                <div style="color:purple">EPIC</div>
+                                <br>
+                                <div style="color:yellow">Click to summon</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot" data-item="Panda">
+                            <img src="../images/betterpets/panda.png" alt="Panda" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:purple">[Lvl 100] Panda</div>
+                                <div style="color:lightgray">A loyal companion that offers unique abilities to its owner.</div>
+                                <br>
+                                <div style="color:gold">✧ Panda's Blessing</div>
+                                <div style="color:lightgray">Increase attack knockback by <span style="color:aqua">75</span><span style="color:aqua">%</span>.</div>
+                                <br>
+                                <div style="color:gold">✧ Nature's Guardian</div>
+                                <div style="color:lightgray">Grants Hero of the Village effect when in a bamboo jungle biome.</div>
+                                <br>
+                                <div style="color:purple">EPIC</div>
+                                <br>
+                                <div style="color:yellow">Click to summon</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot" data-item="Rabbit">
+                            <img src="../images/betterpets/rabbit.png" alt="Rabbit" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:purple">[Lvl 100] Rabbit</div>
+                                <div style="color:lightgray">A loyal companion that offers unique abilities to its owner.</div>
+                                <br>
+                                <div style="color:gold">✧ Rabbit's Blessing</div>
+                                <div style="color:lightgray">Increases jump strength by <span style="color:aqua">160%</span>.</div>
+                                <br>
+                                <div style="color:gold">✧ Safe Landing</div>
+                                <div style="color:lightgray">Fall damage is fully negated when falling from <span style="color:lime">10 blocks</span> or less.</div>
+                                <br>
+                                <div style="color:purple">EPIC</div>
+                                <br>
+                                <div style="color:yellow">Click to summon</div>
+                            </div>
+                        </div>
+
+                        
+                        <!-- Row 3 (Empty) -->
+                        <div class="item-slot">
+                            <img src="../images/betterpets/bookshelf.png" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:aqua">Pet Leveling Display</div>
+                                <div style="color:lightgray">Displays your pet's level, current exp, and the exp needed for the next level</div>
+                                <br>
+                                <div style="color:red">NO ACTIVE PET DETECTED</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot">
+                            <img src="../images/betterpets/null.png" alt="non-interactive" class="item-null">
+                        </div>
+
+                        <div class="item-slot">
+                            <img src="../images/betterpets/null.png" alt="non-interactive" class="item-null">
+                        </div>
+
+                        <div class="item-slot">
+                            <img src="../images/betterpets/gray_dye.png" alt="non-interactive" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:red">Convert Pet To Item</div>
+                                <div style="color:lightgray">Click to convert your active pet back to an item.</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot">
+                            <img src="../images/betterpets/barrier.png" alt="non-interactive" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:red">Close</div>
+                                <div style="color:lightgray">Click to close the menu.</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot">
+                            <img src="../images/betterpets/red_dye.png" alt="non-interactive" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:red">Despawn Pet</div>
+                                <div style="color:lightgray" class="description">Click to despawn your active pet.</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot">
+                            <img src="../images/betterpets/null.png" alt="non-interactive" class="item-null">
+                        </div>
+
+                        <div class="item-slot">
+                            <img src="../images/betterpets/null.png" alt="non-interactive" class="item-null">
+                        </div>
+
+                        <div class="item-slot">
+                            <img src="../images/betterpets/arrow.png" alt="non-interactive" class="item-null">
+                            <div class="item-tooltip">
+                                <div style="color:lime">Next Page</div>
+                                <div style="color:lightgray">To page 2 (19-36)</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Page 2 -->
+                <section class="section">
+                    <div class="section-title-panel">
+                        <h2 class="section-title" style="color:gray">Pet Menu (2/2)</h2>
+                    </div>
+
+                    <div class="item-grid">
+                        <div class="item-slot" data-item="Tiger">
+                            <img src="../images/betterpets/tiger.png" alt="Tiger" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:purple">[Lvl 100] Tiger</div>
+                                <div style="color:lightgray">A loyal companion that offers unique abilities to its owner.</div>
+                                <br>
+                                <div style="color:gold">✧ Tiger's Blessing</div>
+                                <div style="color:lightgray">Increase movement speed on land by <span style="color:aqua">100</span><span style="color:aqua">%</span>.</div>
+                                <br>
+                                <div style="color:gold">✧ Emperor of the Wild</div>
+                                <div style="color:lightgray">Sweeping damage now deals <span style="color:lime">100%</span> of your attack damage.</div>
+                                <br>
+                                <div style="color:purple">EPIC</div>
+                                <br>
+                                <div style="color:yellow">Click to summon</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot" data-item="Blue_Dragon">
+                            <img src="../images/betterpets/blue_dragon.png" alt="Blue Dragon" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:gold">[Lvl 100] Blue Dragon</div>
+                                <div style="color:lightgray">A loyal companion that offers unique abilities to its owner.</div>
+                                <br>
+                                <div style="color:gold">✧ Blue Dragon's Blessing</div>
+                                <div style="color:lightgray">Unleash your inner blue dragon and deal <span style="color:aqua">300</span><span style="color:aqua">%</span> more damage in The End.</div>
+                                <br>
+                                <div style="color:gold">✧ Dragon Scales</div>
+                                <div style="color:lightgray">Grants you a protective shield that replenishes every <span style="color:aqua">180</span> seconds.</div>
+                                <div style="color:darkgray">Upgrades every 25 levels.</div>
+                                <br>
+                                <div style="color:gold">LEGENDARY</div>
+                                <br>
+                                <div style="color:yellow">Click to summon</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot" data-item="Penguin">
+                            <img src="../images/betterpets/penguin.png" alt="Penguin" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:gold">[Lvl 100] Penguin</div>
+                                <div style="color:lightgray">A loyal companion that offers unique abilities to its owner.</div>
+                                <br>
+                                <div style="color:gold">✧ Penguin's Blessing</div>
+                                <div style="color:lightgray">Increase movement speed when in a cold biome by <span style="color:aqua">75</span><span style="color:aqua">%</span>.</div>
+                                <br>
+                                <div style="color:gold">✧ Ice Walker</div>
+                                <div style="color:lightgray">Create blocks of frosted ice below you when you try to step on water.</div>
+                                <br>
+                                <div style="color:gold">LEGENDARY</div>
+                                <br>
+                                <div style="color:yellow">Click to summon</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot" data-item="Red_Dragon">
+                            <img src="../images/betterpets/red_dragon.png" alt="Red Dragon" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:gold">[Lvl 100] Red Dragon</div>
+                                <div style="color:lightgray">A loyal companion that offers unique abilities to its owner.</div>
+                                <br>
+                                <div style="color:gold">✧ Red Dragon's Blessing</div>
+                                <div style="color:lightgray">Unleash your inner red dragon and deal <span style="color:aqua">300</span><span style="color:aqua">%</span> more damage in The Nether.</div>
+                                <br>
+                                <div style="color:gold">✧ Dragon Scales</div>
+                                <div style="color:lightgray">Grants you a protective shield that replenishes every <span style="color:aqua">180</span> seconds.</div>
+                                <div style="color:darkgray">Upgrades every 25 levels.</div>
+                                <br>
+                                <div style="color:gold">LEGENDARY</div>
+                                <br>
+                                <div style="color:yellow">Click to summon</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot" data-item="Warden">
+                            <img src="../images/betterpets/warden.png" alt="Warden" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:gold">[Lvl 100] Warden</div>
+                                <div style="color:lightgray">A loyal companion that offers unique abilities to its owner.</div>
+                                <br>
+                                <div style="color:gold">✧ Warden's Blessing</div>
+                                <div style="color:lightgray">Detect the sound frequency of mobs in a <span style="color:aqua">50</span> block radius and reveal them.</div>
+                                <br>
+                                <div style="color:gold">✧ Reverse Reverberation</div>
+                                <div style="color:lightgray">Hide your presence by softening the sound of your footsteps, making you undetectable by the warden.</div>
+                                <br>
+                                <div style="color:gold">LEGENDARY</div>
+                                <br>
+                                <div style="color:yellow">Click to summon</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot" data-item="Herobrine">
+                            <img src="../images/betterpets/herobrine.png" alt="Herobrine" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:darkred">[Lvl 100] Herobrine</div>
+                                <div style="color:lightgray">A loyal companion that offers unique abilities to its owner.</div>
+                                <br>
+                                <div style="color:gold">✧ Herobrine's Blessing</div>
+                                <div style="color:lightgray">Absorb the life force of nearby beings and increase max health by <span style="color:aqua">100</span><span style="color:aqua">%</span>.</div>
+                                <br>
+                                <div style="color:gold">✧ Myth or Reality</div>
+                                <div style="color:gray">Break the boundaries between myth and reality, allowing you to increase attack range by <span style="color:aqua">75</span><span style="color:aqua">%</span>.</div>
+                                <br>
+                                <div style="color:gold">✧ God of the Overworld</div>
+                                <div style="color:lightgray">Your presence makes the world turn into an eerie place, where constant thunderstorms appear.</div>
+                                <br>
+                                <div style="color:darkred">EXTRAORDINARY</div>
+                                <br>
+                                <div style="color:yellow">Click to summon</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot" data-item="Phoenix">
+                            <img src="../images/betterpets/phoenix.png" alt="Phoenix" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:darkred">[Lvl 100] Phoenix</div>
+                                <div style="color:lightgray">A loyal companion that offers unique abilities to its owner.</div>
+                                <br>
+                                <div style="color:gold">✧ Phoenix's Blessing</div>
+                                <div style="color:lightgray">Sets undead mobs ablaze when hit for <span style="color:aqua">10</span> seconds.</div>
+                                <br>
+                                <div style="color:gold">✧ Flames of Rebirth</div>
+                                <div style="color:lightgray">Grants you a Totem of Undying every <span style="color:lime">12</span> hours.</div>
+                                <div style="color:darkgray">Upgrades every 50 levels.</div>
+                                <br>
+                                <div style="color:gold">✧ Blazing Enlightenment</div>
+                                <div style="color:lightgray">Become one with the flames and nullify all fire damage.</div>
+                                <br>
+                                <div style="color:darkred">EXTRAORDINARY</div>
+                                <br>
+                                <div style="color:yellow">Click to summon</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot" data-item="Reaper">
+                            <img src="../images/betterpets/reaper.png" alt="Reaper" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:darkred">[Lvl 100] Reaper</div>
+                                <div style="color:lightgray">A loyal companion that offers unique abilities to its owner.</div>
+                                <br>
+                                <div style="color:gold">✧ Reaper's Blessing</div>
+                                <div style="color:lightgray">The very image of death, spreads fear and poison to all nearby undead mobs in a <span style="color:aqua">25</span> block radius.</div>
+                                <div style="color:darkgray">Upgrades every 50 levels.</div>
+                                <br>
+                                <div style="color:gold">✧ Death's Touch</div>
+                                <div style="color:lightgray">The all-powerful Reaper's Scythe grants you an increase in attack speed of <span style="color:aqua">100</span><span style="color:aqua">%</span>.</div>
+                                <br>
+                                <div style="color:gold">✧ Harvest of Wrath</div>
+                                <div style="color:lightgray">Steal the life energy from your victim, making each strike on them grant you <span style="color:lime">strength </span> and <span style="color:lime">healing</span>.</div>
+                                <br>
+                                <div style="color:darkred">EXTRAORDINARY</div>
+                                <br>
+                                <div style="color:yellow">Click to summon</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot empty" aria-hidden="true" data-item="" style="pointer-events:none"></div>
+                        
+                        <!-- Row 2 -->
+                        <div class="item-slot empty" aria-hidden="true" data-item="" style="pointer-events:none"></div>
+                        <div class="item-slot empty" aria-hidden="true" data-item="" style="pointer-events:none"></div>
+                        <div class="item-slot empty" aria-hidden="true" data-item="" style="pointer-events:none"></div>
+                        <div class="item-slot empty" aria-hidden="true" data-item="" style="pointer-events:none"></div>
+                        <div class="item-slot empty" aria-hidden="true" data-item="" style="pointer-events:none"></div>
+                        <div class="item-slot empty" aria-hidden="true" data-item="" style="pointer-events:none"></div>
+                        <div class="item-slot empty" aria-hidden="true" data-item="" style="pointer-events:none"></div>
+                        <div class="item-slot empty" aria-hidden="true" data-item="" style="pointer-events:none"></div>
+                        <div class="item-slot empty" aria-hidden="true" data-item="" style="pointer-events:none"></div>
+
+                        
+                        <!-- Row 3 -->
+                        <div class="item-slot">
+                            <img src="../images/betterpets/bookshelf.png" alt="Ant" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:aqua">Pet Leveling Display</div>
+                                <div style="color:lightgray">Displays your pet's level, current exp, and the exp needed for the next level</div>
+                                <br>
+                                <div style="color:red">NO ACTIVE PET DETECTED</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot">
+                            <img src="../images/betterpets/null.png" alt="non-interactive" class="item-null">
+                        </div>
+
+                        <div class="item-slot">
+                            <img src="../images/betterpets/null.png" alt="non-interactive" class="item-null">
+                        </div>
+
+                        <div class="item-slot">
+                            <img src="../images/betterpets/gray_dye.png" alt="non-interactive" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:red">Convert Pet To Item</div>
+                                <div style="color:lightgray">Click to convert your active pet back to an item.</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot">
+                            <img src="../images/betterpets/barrier.png" alt="non-interactive" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:red">Close</div>
+                                <div style="color:lightgray">Click to close the menu.</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot">
+                            <img src="../images/betterpets/red_dye.png" alt="non-interactive" class="item-icon">
+                            <div class="item-tooltip">
+                                <div style="color:red">Despawn Pet</div>
+                                <div style="color:lightgray" class="description">Click to despawn your active pet.</div>
+                            </div>
+                        </div>
+
+                        <div class="item-slot">
+                            <img src="../images/betterpets/null.png" alt="non-interactive" class="item-null">
+                        </div>
+
+                        <div class="item-slot">
+                            <img src="../images/betterpets/null.png" alt="non-interactive" class="item-null">
+                        </div>
+
+                        <div class="item-slot">
+                            <img src="../images/betterpets/arrow.png" alt="non-interactive" class="item-null">
+                            <div class="item-tooltip">
+                                <div style="color:lime">Previous Page</div>
+                                <div style="color:lightgray">To page 1 (1-18)</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <br><br>
+
+                <!-- Pet Leveling Display Section -->
+                <section id="PetLevelingDisplay" class="content">
+                    <p>The Pet Leveling Display shows the current level and abilities of your pet and how far it has progressed towards the next level.</p>
+
+                    <div class="mc-tooltip">
+                        <div style="color:aqua">Pet Leveling Display</div>
+                        <div style="color:lightgray">Displays your pet's level, current exp, and the exp needed for the next level.</div>
+                        <br>
+                        <div style="color:red">NO ACTIVE PET DETECTED</div>
+                    </div>
+
+                    <div class="mc-tooltip">
+                        <div style="color:aqua">Pet Leveling Display</div>
+                        <div style="color:lightgray">Displays your pet's level, current exp, and the exp needed for the next level.</div>
+                        <br>
+                        <div style="color:purple">[Lvl 76] Panda    35%</div>
+                        <div style="color:darkgray"><span style="color:lime">▬▬▬▬▬</span>▬▬▬▬▬▬▬▬▬▬ <span style="color:yellow">4172<span style="color:gray">/</span>11866</span></div>
+                    </div>
+
+                    <div class="mc-tooltip">
+                        <div style="color:aqua">Pet Leveling Display</div>
+                        <div style="color:lightgray">Displays your pet's level, current exp, and the exp needed for the next level.</div>
+                        <br>
+                        <div style="color:lime">[Lvl 100] Cat <span style="color:gray">-</span> <span style="color:yellow">MAX</span></div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section id="DropChances">
+            <div class="content-header">
+                <h1>Drop Chances</h1>
+                <p>This section provides detailed information about the drop chances of all pets when opening <span style="color:orange">buried treasure chests</span> or <span style="color:orange">shipwreck treasure chests</span>.</p>
+                <p style="color:gray">Total Pets: <span style="color:yellow">26</span></p>
+                <p style="color:lime">Common Pet Drop Rates<br><span style="color:gray">
+                    Chance to obtain: <span style="color:lime">50%</span><br>
+                    Chance for specific pet: <span style="color:lime">6.25%</span>
+                </span></p>
+                <p style="color:blue">Rare Pet Drop Rates<br><span style="color:gray">
+                    Chance to obtain: <span style="color:blue">20.83%</span><br>
+                    Chance for specific pet: <span style="color:blue">4.17%</span>
+                </span></p>
+                <p style="color:purple">Epic Pet Drop Rates<br><span style="color:gray">
+                    Chance to obtain: <span style="color:purple">15.62%</span><br>
+                    Chance for specific pet: <span style="color:purple">2.60%</span>
+                </span></p>
+                <p style="color:gold">Legendary Pet Drop Rates<br><span style="color:gray">
+                    Chance to obtain: <span style="color:gold">4.17%</span><br>
+                    Chance for specific pet: <span style="color:gold">1.04%</span>
+                </span></p>
+                <p style="color:red">Extraordinary Pet Drop Rates<br><span style="color:gray">
+                    Chance to obtain: <span style="color:red">1.56%</span><br>
+                    Chance for specific pet: <span style="color:red">0.52%</span>
+                </span></p>
+            </div>
+        </section>
+        <br><br><br><br><br>
+
+
+        <section id="Leveling">
+            <div class="content-header">
+                <h1>Leveling</h1>
+                <p>Pets can be leveled up by gaining experience points. These are the exact same as the player experience points.</p>
+            </div>
+
+            <p style="text-align: center;">This table shows the exp required for each pet level (1-100).</p>
+            <div class="mc-container">
+                <div id="leveling-table-container">
+                    <table class="leveling-table" summary="Pet levels and required experience">
+                        <thead>
+                            <tr>
+                                <th>Level</th>
+                                <th>Exp Required</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>Standard Level</td></tr>
+                            <tr><td>2</td><td>16</td></tr>
+                            <tr><td>3</td><td>26</td></tr>
+                            <tr><td>4</td><td>40</td></tr>
+                            <tr><td>5</td><td>58</td></tr>
+                            <tr><td>6</td><td>80</td></tr>
+                            <tr><td>7</td><td>106</td></tr>
+                            <tr><td>8</td><td>136</td></tr>
+                            <tr><td>9</td><td>170</td></tr>
+                            <tr><td>10</td><td>208</td></tr>
+                            <tr><td>11</td><td>250</td></tr>
+                            <tr><td>12</td><td>296</td></tr>
+                            <tr><td>13</td><td>346</td></tr>
+                            <tr><td>14</td><td>400</td></tr>
+                            <tr><td>15</td><td>458</td></tr>
+                            <tr><td>16</td><td>520</td></tr>
+                            <tr><td>17</td><td>586</td></tr>
+                            <tr><td>18</td><td>656</td></tr>
+                            <tr><td>19</td><td>730</td></tr>
+                            <tr><td>20</td><td>808</td></tr>
+                            <tr><td>21</td><td>890</td></tr>
+                            <tr><td>22</td><td>976</td></tr>
+                            <tr><td>23</td><td>1,066</td></tr>
+                            <tr><td>24</td><td>1,160</td></tr>
+                            <tr><td>25</td><td>1,258</td></tr>
+                            <tr><td>26</td><td>1,360</td></tr>
+                            <tr><td>27</td><td>1,466</td></tr>
+                            <tr><td>28</td><td>1,576</td></tr>
+                            <tr><td>29</td><td>1,690</td></tr>
+                            <tr><td>30</td><td>1,808</td></tr>
+                            <tr><td>31</td><td>1,930</td></tr>
+                            <tr><td>32</td><td>2,056</td></tr>
+                            <tr><td>33</td><td>2,186</td></tr>
+                            <tr><td>34</td><td>2,320</td></tr>
+                            <tr><td>35</td><td>2,458</td></tr>
+                            <tr><td>36</td><td>2,600</td></tr>
+                            <tr><td>37</td><td>2,746</td></tr>
+                            <tr><td>38</td><td>2,896</td></tr>
+                            <tr><td>39</td><td>3050</td></tr>
+                            <tr><td>40</td><td>3,208</td></tr>
+                            <tr><td>41</td><td>3,370</td></tr>
+                            <tr><td>42</td><td>3,536</td></tr>
+                            <tr><td>43</td><td>3,706</td></tr>
+                            <tr><td>44</td><td>3,880</td></tr>
+                            <tr><td>45</td><td>4,058</td></tr>
+                            <tr><td>46</td><td>4,240</td></tr>
+                            <tr><td>47</td><td>4,426</td></tr>
+                            <tr><td>48</td><td>4,616</td></tr>
+                            <tr><td>49</td><td>4,810</td></tr>
+                            <tr><td>50</td><td>5,008</td></tr>
+                            <tr><td>51</td><td>5,210</td></tr>
+                            <tr><td>52</td><td>5,416</td></tr>
+                            <tr><td>53</td><td>5,626</td></tr>
+                            <tr><td>54</td><td>5,840</td></tr>
+                            <tr><td>55</td><td>6,058</td></tr>
+                            <tr><td>56</td><td>6,280</td></tr>
+                            <tr><td>57</td><td>6,506</td></tr>
+                            <tr><td>58</td><td>6,736</td></tr>
+                            <tr><td>59</td><td>6,970</td></tr>
+                            <tr><td>60</td><td>7,208</td></tr>
+                            <tr><td>61</td><td>7,450</td></tr>
+                            <tr><td>62</td><td>7,696</td></tr>
+                            <tr><td>63</td><td>7,946</td></tr>
+                            <tr><td>64</td><td>8,200</td></tr>
+                            <tr><td>65</td><td>8,458</td></tr>
+                            <tr><td>66</td><td>8,720</td></tr>
+                            <tr><td>67</td><td>8,986</td></tr>
+                            <tr><td>68</td><td>9,256</td></tr>
+                            <tr><td>69</td><td>9,530</td></tr>
+                            <tr><td>70</td><td>9,808</td></tr>
+                            <tr><td>71</td><td>10,090</td></tr>
+                            <tr><td>72</td><td>10,376</td></tr>
+                            <tr><td>73</td><td>10,666</td></tr>
+                            <tr><td>74</td><td>10,960</td></tr>
+                            <tr><td>75</td><td>11,258</td></tr>
+                            <tr><td>76</td><td>11,560</td></tr>
+                            <tr><td>77</td><td>11,866</td></tr>
+                            <tr><td>78</td><td>12176</td></tr>
+                            <tr><td>79</td><td>12,490</td></tr>
+                            <tr><td>80</td><td>12,808</td></tr>
+                            <tr><td>81</td><td>13130</td></tr>
+                            <tr><td>82</td><td>13,456</td></tr>
+                            <tr><td>83</td><td>13,786</td></tr>
+                            <tr><td>84</td><td>14,120</td></tr>
+                            <tr><td>85</td><td>14,458</td></tr>
+                            <tr><td>86</td><td>14,800</td></tr>
+                            <tr><td>87</td><td>15,146</td></tr>
+                            <tr><td>88</td><td>15,496</td></tr>
+                            <tr><td>89</td><td>15,850</td></tr>
+                            <tr><td>90</td><td>16,208</td></tr>
+                            <tr><td>91</td><td>16,570</td></tr>
+                            <tr><td>92</td><td>16,936</td></tr>
+                            <tr><td>93</td><td>17,306</td></tr>
+                            <tr><td>94</td><td>17,680</td></tr>
+                            <tr><td>95</td><td>18,058</td></tr>
+                            <tr><td>96</td><td>18,440</td></tr>
+                            <tr><td>97</td><td>18,826</td></tr>
+                            <tr><td>98</td><td>19,216</td></tr>
+                            <tr><td>99</td><td>19,610</td></tr>
+                            <tr><td>100</td><td>20,008</td></tr>
+                        </tbody>
+                        <tfoot>
+                            <tr><td>Total (1->100)</td><td>677,490</td></tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            <p style="text-align: center;">Going from level 1 to 100 is the same as going from player level 0 to around 406.</p>
+        </section>
+
+        <!-- Specific Pets Section -->
+        <section id="Ant">
+            <div class="content-header">
+                <h1>Ant Pet</h1>
+                <p>Here is the difference between a level 1 and level 100 Ant pet.</p>
+            </div>
+
+            <div class="content">
+                <div class="mc-tooltip">
+                    <div style="color:lime">[Lvl 1] Ant</div>
+                    <div style="color:lightgray">A loyal companion that offers unique abilities to its owner.</div>
+                    <br>
+                    <div style="color:gold">✧ Ant's Blessing</div>
+                    <div style="color:lightgray">Become <span style="color:aqua">0.5%</span> smaller in scale.</div>
+                    <br>
+                    <div style="color:yellow">Right-click to add to your pet list.</div>
+                    <br>
+                    <div style="color:lime">COMMON</div>
+                </div>
+
+                <div class="mc-tooltip">
+                    <div style="color:lime">[Lvl 100] Ant</div>
+                    <div style="color:lightgray">A loyal companion that offers unique abilities to its owner.</div>
+                    <br>
+                    <div style="color:gold">✧ Ant's Blessing</div>
+                    <div style="color:lightgray">Become <span style="color:aqua">50%</span> smaller in scale.</div>
+                    <br>
+                    <div style="color:yellow">Right-click to add to your pet list.</div>
+                    <br>
+                    <div style="color:lime">COMMON</div>
+                </div>
+            </div>
+
+            <div class="pet-description">
+                <p style="color:gold">✧ Ant's Blessing ✧</p>
+                <p style="color:lightgray">Become <span style="color:aqua">0.5%</span> smaller in scale.</p>
+                <span style="color:lime">(+0.5% per level)</span>
+            </div>
+        </section>
+
+        <section id="Cat">
+            <div class="content-header">
+                <h1>Cat Pet</h1>
+                <p>The Cat pet is a unique pet that provides specific abilities to its owner.</p>
+            </div>
+
+            <div class="content">
+                <div class="mc-tooltip">
+                    <div style="color:lime">[Lvl 100] Cat</div>
+                    <div style="color:lightgray">A loyal companion that offers unique abilities to its owner.</div>
+                    <br>
+                    <div style="color:gold">✧ Cat's Blessing</div>
+                    <div style="color:lightgray">Increase mining speed by <span style="color:aqua">50</span><span style="color:aqua">%</span>.</div>
+                    <br>
+                    <div style="color:gold">✧ Hive Mind</div>
+                    <div style="color:lightgray">Summon a swarm of ants to assist you in combat, dealing additional damage to your enemies.</div>
+                    <br>
+                    <div style="color:lime">COMMON</div>
+                </div>
+
+                <div class="mc-tooltip">
+                    <div style="color:lime">[Lvl 100] Cat</div>
+                    <div style="color:lightgray">A loyal companion that offers unique abilities to its owner.</div>
+                    <br>
+                    <div style="color:gold">✧ Cat's Blessing</div>
+                    <div style="color:lightgray">Increase mining speed by <span style="color:aqua">50</span><span style="color:aqua">%</span>.</div>
+                    <br>
+                    <div style="color:gold">✧ Hive Mind</div>
+                    <div style="color:lightgray">Summon a swarm of ants to assist you in combat, dealing additional damage to your enemies.</div>
+                    <br>
+                    <div style="color:lime">COMMON</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+    <footer class="footer" aria-hidden="true">
+        <div class="footer-row">
+            <span class="footer-left" style="font-family: 'Inter', sans-serif;">© Vanderflys Inc</span>
+            <span class="footer-right" style="font-family: 'Inter', sans-serif;">Built with ♥</span>
+        </div>
+    </footer>
+
+    <script>
+        // Router: show everything by default. Only when the hash matches a pet from the pet menu
+        // (e.g. #Ant) we hide all other sections and show only that pet's section.
+        (function() {
+            const sections = Array.from(document.querySelectorAll('section[id]'));
+
+            // Gather pet names from the item-slot elements (these are the in-menu pets)
+            const petSlots = Array.from(document.querySelectorAll('.item-slot[data-item]'));
+            const petNames = new Set(petSlots.map(s => (s.dataset.item || '').toString()).filter(Boolean));
+
+            // Show all non-pet sections and hide pet-specific sections. Pet sections remain hidden
+            // until their hash is selected.
+            const petSections = sections.filter(s => false); // placeholder, replaced after petNames
+
+            function showAllExceptPets() {
+                sections.forEach(s => {
+                    const isPetSection = petNames.has(s.id);
+                    if (isPetSection) {
+                        s.style.display = 'none';
+                        s.classList.remove('active');
+                    } else {
+                        s.style.display = '';
+                        s.classList.remove('active');
+                    }
+                });
+            }
+
+            function showOnly(id) {
+                sections.forEach(s => {
+                    if (s.id === id) {
+                        s.style.display = '';
+                        s.classList.add('active');
+                    } else {
+                        s.style.display = 'none';
+                        s.classList.remove('active');
+                    }
+                });
+            }
+
+            function updateNav(route) {
+                document.querySelectorAll('nav a[href^="#"], a.nav-link[href^="#"]').forEach(a => {
+                    const href = a.getAttribute('href') || '';
+                    const target = href.startsWith('#') ? href.slice(1) : null;
+                    a.classList.toggle('active', target === route);
+                });
+            }
+
+            function initialRoute() {
+                let raw = location.hash.replace('#', '');
+                try { raw = decodeURIComponent(raw); } catch (e) { /* ignore malformed */ }
+
+                // If the hash corresponds to a pet name and a section exists for it, show only that pet.
+                if (raw && petNames.has(raw) && document.getElementById(raw)) {
+                    // Measure the Contents heading position (nav > h1) so the pet can be aligned
+                    // to the same viewport spot (closer to the Contents area).
+                    const contentsHeading = document.querySelector('nav h1') || document.querySelector('nav');
+                    let contentsViewportY = null;
+                    if (contentsHeading) contentsViewportY = contentsHeading.getBoundingClientRect().top;
+
+                    // Show only the pet section (this will hide the Pet Menu), then scroll so the
+                    // selected pet's header lines up with the Contents heading position.
+                    showOnly(raw);
+                    updateNav(raw);
+
+                    (function scrollToMatchContents(id, contentsViewportY){
+                        const el = document.getElementById(id);
+                        if (!el) return;
+
+                        // Prefer aligning the .content-header inside sections so headers line up
+                        const petHeader = el.querySelector('.content-header') || el;
+
+                        // If we couldn't determine Contents heading viewport position, fallback
+                        // to header/nav combined height.
+                        if (contentsViewportY === null || isNaN(contentsViewportY)) {
+                            const header = document.querySelector('header');
+                            const nav = document.querySelector('nav');
+                            const headerHeight = header ? header.getBoundingClientRect().height : 0;
+                            const navHeight = nav ? nav.getBoundingClientRect().height : 0;
+                            const extraPadding = 8;
+                            contentsViewportY = headerHeight + navHeight + extraPadding;
+                        }
+
+                        // Absolute top of the pet header
+                        const petHeaderAbs = petHeader.getBoundingClientRect().top + window.pageYOffset;
+
+                        // Extra lift to position the pet slightly above the Contents baseline
+                        const extraLift = 80; // pixels — increase to move pet higher
+
+                        const top = petHeaderAbs - contentsViewportY - extraLift;
+                        window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+                    })(raw, contentsViewportY);
+
+                    return;
+                }
+
+                // Otherwise show the page normally: show non-pet sections and keep pet sections hidden
+                showAllExceptPets();
+                updateNav(raw);
+            }
+
+            window.addEventListener('hashchange', initialRoute);
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initialRoute);
+            } else {
+                initialRoute();
+            }
+        })();
+    </script>
+
+    <script>
+        // Make each item-slot clickable by wrapping its content in an <a> with an href
+        // For non-interactive slots (contain .item-null OR have an empty data-item) the link
+        // will be disabled so clicks do nothing.
+        (function makeItemsAnchors() {
+            document.querySelectorAll('.item-slot').forEach(slot => {
+                // If an existing .item-link is present, unwrap it so we can recreate with correct behavior
+                const existing = slot.querySelector('a.item-link');
+                if (existing) {
+                    while (existing.firstChild) slot.appendChild(existing.firstChild);
+                    existing.remove();
+                }
+
+                const hasNullImage = !!slot.querySelector('.item-null');
+                const raw = slot.dataset.item;
+                const isEmptyDataItem = (typeof raw === 'undefined' || raw === null || raw.toString().trim() === '');
+                const isNonInteractive = hasNullImage || isEmptyDataItem;
+
+                const itemName = isNonInteractive ? '' : raw.toString();
+                const href = isNonInteractive ? 'javascript:void(0);' : ('#' + encodeURIComponent(itemName));
+
+                const link = document.createElement('a');
+                link.className = 'item-link';
+                link.href = href;
+                link.setAttribute('aria-label', itemName || '');
+                link.style.display = 'block';
+                link.style.color = 'inherit';
+                link.style.textDecoration = 'none';
+
+                if (isNonInteractive) {
+                    // Make it visually and interactively non-clickable
+                    link.setAttribute('aria-disabled', 'true');
+                    link.style.cursor = 'default';
+                    link.tabIndex = -1;
+                    link.addEventListener('click', e => e.preventDefault());
+                } else {
+                    link.tabIndex = 0;
+                }
+
+                // Move all children of the slot into the anchor
+                while (slot.firstChild) link.appendChild(slot.firstChild);
+
+                slot.appendChild(link);
+            });
+        })();
+    </script>
+
+    <script>
+        // Minecraft-style tooltip positioning
+        document.querySelectorAll('.item-slot').forEach(slot => {
+            const tooltip = slot.querySelector('.item-tooltip');
+            
+            // Only show tooltips for slots that have items (not empty)
+            if (tooltip && !slot.classList.contains('empty')) {
+                slot.addEventListener('mouseenter', function(e) {
+                    tooltip.style.opacity = '1';
+                    updateTooltipPosition(e, tooltip);
+                });
+                
+                slot.addEventListener('mousemove', function(e) {
+                    updateTooltipPosition(e, tooltip);
+                });
+                
+                slot.addEventListener('mouseleave', function() {
+                    tooltip.style.opacity = '0';
+                });
+            }
+        });
+        
+        function updateTooltipPosition(e, tooltip) {
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;
+            const padding = 15;
+            const vw = window.innerWidth;
+            const vh = window.innerHeight;
+            const tw = tooltip.offsetWidth;
+            const th = tooltip.offsetHeight;
+
+            let left = mouseX + padding;
+
+            if (left + tw + 8 > vw) left = Math.max(8, mouseX - tw - padding);
+
+            const edgeMargin = 80;
+            let top;
+
+            if (mouseY < edgeMargin) top = Math.min(vh - th - 8, mouseY + padding);
+            else if (mouseY > vh - edgeMargin) top = Math.max(8, mouseY - th - padding);
+            else top = Math.min(Math.max(8, mouseY - th / 2), vh - th - 8);
+
+            tooltip.style.left = left + 'px';
+            tooltip.style.top = top + 'px';
+        }
+    </script>
+</body>
+</html>
