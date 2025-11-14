@@ -28,6 +28,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 3rem;
+    /* ensure header sits above the glow pseudo-elements */
+    position: relative;
+    z-index: 1;
 }
 
 header .logo {
@@ -55,6 +58,9 @@ header nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    /* stacking context so main content stays above the animated glow */
+    position: relative;
+    z-index: 1;
 }
 
 .center-stage {
@@ -117,18 +123,31 @@ header nav a:hover {
 
 .actions {
     display: flex;
-    flex-wrap: wrap;
+    /* keep buttons on a single line; allow horizontal scroll on narrow viewports */
+    flex-wrap: nowrap;
     gap: 1rem;
     margin-top: 2rem;
     justify-content: flex-start;
+    /* remove horizontal scrolling; instead make buttons shrink to fit */
+    align-items: center;
 }
 
 .actions a {
     text-decoration: none;
-    padding: 0.75rem 1.5rem;
+    /* allow buttons to shrink and scale responsively so they fit on one line */
+    flex: 0 1 auto;
+    min-width: 0;
+    white-space: nowrap;
+    /* center the label inside the button both vertically and horizontally */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(0.45rem, 0.8vw, 0.75rem) clamp(0.9rem, 1.6vw, 1.5rem);
     border-radius: 10px;
     font-weight: 600;
     transition: all 0.2s;
+    font-size: clamp(0.85rem, 1.2vw, 1.05rem);
+    line-height: 1; /* ensure consistent vertical centering */
 }
 
 .btn-accent {
@@ -159,7 +178,7 @@ header nav a:hover {
 }
 
 .footer {
-    position: static;
+    position: relative;
     margin-top: 0;
     height: var(--footer-height);
     color: #9ca3af;
@@ -170,6 +189,7 @@ header nav a:hover {
     pointer-events: none;
     box-sizing: border-box;
     padding: 0 .5rem;
+    z-index: 1;
 }
 
 .footer .footer-row {
@@ -230,3 +250,49 @@ header nav a:hover {
         margin-bottom: 1rem;
     }
 }
+
+/* Subtle animated background glow that slowly cycles colors */
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0; /* sits behind content (content has z-index:1) */
+    mix-blend-mode: screen;
+    filter: blur(60px);
+}
+
+body::before {
+    background-image:
+        radial-gradient(circle at 10% 30%, rgba(99,197,218,0.9) 0%, rgba(99,197,218,0.35) 12%, transparent 28%),
+        radial-gradient(circle at 80% 70%, rgba(57,68,188,0.85) 0%, rgba(57,68,188,0.28) 10%, transparent 26%);
+    opacity: 0.04;
+    animation: glowFloat 20s ease-in-out infinite, hueRotate 14s linear infinite;
+}
+
+body::after {
+    background-image:
+        radial-gradient(circle at 65% 20%, rgba(36,180,100,0.9) 0%, rgba(36,180,100,0.30) 10%, transparent 22%),
+        radial-gradient(circle at 30% 80%, rgba(212,82,163,0.85) 0%, rgba(212,82,163,0.28) 8%, transparent 20%);
+    opacity: 0.03;
+    animation: glowFloat 26s ease-in-out infinite reverse, hueRotate 18s linear infinite reverse;
+}
+
+@keyframes hueRotate {
+    from { filter: blur(60px) hue-rotate(0deg); }
+    to   { filter: blur(60px) hue-rotate(360deg); }
+}
+
+@keyframes glowFloat {
+    0%   { transform: translate3d(0,0,0) scale(1); }
+    50%  { transform: translate3d(2%,4%,0) scale(1.02); }
+    100% { transform: translate3d(0,0,0) scale(1); }
+}
+
+/* Optional tuning classes: reduce intensity on small screens */
+@media (max-width: 600px) {
+    body::before,
+    body::after { opacity: 0.045; filter: blur(48px); }
+}
+
