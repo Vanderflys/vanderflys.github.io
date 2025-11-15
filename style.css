@@ -123,7 +123,7 @@ header nav a:hover {
 
 .actions {
     display: flex;
-    /* keep buttons on a single line; allow horizontal scroll on narrow viewports */
+    /* prefer a single line on wide viewports; allow wrapping on smaller screens via media query */
     flex-wrap: nowrap;
     gap: 1rem;
     margin-top: 2rem;
@@ -137,6 +137,7 @@ header nav a:hover {
     /* allow buttons to shrink and scale responsively so they fit on one line */
     flex: 0 1 auto;
     min-width: 0;
+    /* normally keep labels on one line, but allow wrapping on small screens via media queries */
     white-space: nowrap;
     /* center the label inside the button both vertically and horizontally */
     display: inline-flex;
@@ -148,6 +149,32 @@ header nav a:hover {
     transition: all 0.2s;
     font-size: clamp(0.85rem, 1.2vw, 1.05rem);
     line-height: 1; /* ensure consistent vertical centering */
+}
+
+/* Responsive: allow buttons to wrap and their text to break on narrow viewports */
+@media (max-width: 720px) {
+    .actions {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+    }
+
+    .actions a {
+        /* allow two buttons per row when there's space, otherwise they'll wrap to full width */
+        flex: 1 1 calc(50% - 0.75rem);
+        min-width: 140px;
+        white-space: normal; /* enable wrapping within the button */
+        overflow-wrap: anywhere;
+        word-break: break-word;
+        padding: 0.5rem 0.9rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .actions a {
+        /* full width buttons on very small screens for readability */
+        flex-basis: 100%;
+    }
 }
 
 .btn-accent {
